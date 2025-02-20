@@ -1,0 +1,258 @@
+{
+  "main": {
+    "id": "943719df1b68c130",
+    "type": "split",
+    "children": [
+      {
+        "id": "966f5977e7c519f1",
+        "type": "split",
+        "children": [
+          {
+            "id": "64f876536257aa27",
+            "type": "tabs",
+            "dimension": 77.90476190476191,
+            "children": [
+              {
+                "id": "5aaf91ae3dec0dde",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "05-工作/2025省局业务架构师工作规划.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "2025省局业务架构师工作规划"
+                }
+              }
+            ]
+          },
+          {
+            "id": "4b4ad703f21bf472",
+            "type": "tabs",
+            "dimension": 22.095238095238095,
+            "children": [
+              {
+                "id": "a40f6bdeb51505a5",
+                "type": "leaf",
+                "state": {
+                  "type": "mindmap",
+                  "state": {},
+                  "icon": "dot-network",
+                  "title": "Mind Map of 2025省局业务架构师工作规划"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "dd9b9310ddc725f9",
+    "type": "split",
+    "children": [
+      {
+        "id": "4a280c67eeff9557",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fd62fc296630681a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "638e7c3cbf635c19",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "阅读 ",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "3e14849cf02a1d78",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 277.5
+  },
+  "right": {
+    "id": "811b3179b8b11cb0",
+    "type": "split",
+    "children": [
+      {
+        "id": "4ffc15093ab29df1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0efcb9197f991e59",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "使用Obsidian.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "使用Obsidian 的反向链接列表"
+            }
+          },
+          {
+            "id": "579fb03cd9a62c88",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "使用Obsidian.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "使用Obsidian 的出链列表"
+            }
+          },
+          {
+            "id": "172adb11c6c3d09b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "f51d6405acf8fc91",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "05-工作/2025省局业务架构师工作规划.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "2025省局业务架构师工作规划 的大纲"
+            }
+          },
+          {
+            "id": "bbdec4da75c87bb5",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "fa515a9c07c7c92a",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-memos:Thino": false,
+      "random-note:开始漫游笔记": false,
+      "obsidian-kanban:创建新看板": false,
+      "smart-second-brain:打开 S2B 聊天": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
+    }
+  },
+  "active": "5aaf91ae3dec0dde",
+  "lastOpenFiles": [
+    "05-工作/2025省局业务架构师工作规划.md",
+    "01-杂记/使用Obsidian.md",
+    "Pasted image 20241220105759.png",
+    "01-杂记/2025-02-17.md",
+    "05-工作",
+    "04-阅读/如何像计算机科学家一样思考.md",
+    "99-模板/阅读模板.md",
+    "02-知识/人工智能/知识库搭建/RAGFlow.md",
+    "00-待办/待办.md",
+    "01-杂记/2025-01-10.md",
+    "01-杂记/2025-01-08.md",
+    "01-杂记/2025-01-07.md",
+    "02-知识/人工智能/知识库搭建/DIfy.md",
+    "01-杂记/2024-12-20.md",
+    "03-软实力/业务架构师.md",
+    "03-软实力/未命名.md",
+    "03-软实力/如何成为业务架构师.md",
+    "03-软实力/Drawing 2025-01-06 14.56.00.excalidraw.md",
+    "03-软实力/未命名思维导图.md",
+    "Pasted image 20241220105640.png",
+    "Pasted image 20241220105722.png",
+    "02-知识/人工智能/知识库搭建/Dify",
+    "Excalidraw/Drawing 2024-12-06 16.34.04.excalidraw.md",
+    "02-知识/人工智能/知识库搭建",
+    "02-知识/人工智能",
+    "Excalidraw/Drawing 2024-12-06 16.33.38.excalidraw.md",
+    "Excalidraw",
+    "未命名看板.md",
+    "03-软实力",
+    "99-模板",
+    "04-阅读",
+    "02-知识",
+    "00-待办.md",
+    "00-待办"
+  ]
+}
