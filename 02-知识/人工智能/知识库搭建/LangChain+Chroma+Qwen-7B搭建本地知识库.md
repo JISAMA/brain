@@ -26,7 +26,11 @@ pip install llama-cpp-python --prefer-binary
 
 ### **项目结构**
 ```
-my_rag_project/
+my_rag_project/  
+├── rag_env/          # 虚拟环境目录（工具箱）
+│   ├── Lib/          # 安装的Python库（如langchain、chromadb）
+│   ├── Scripts/      # 激活脚本（如activate）
+│   └── pyvenv.cfg    # 虚拟环境配置
 ├── docs/                # 存放知识库文件（PDF/Word/TXT等）
 ├── chroma_db/           # Chroma向量数据库目录（自动生成）
 ├── models/              # 存放模型文件
