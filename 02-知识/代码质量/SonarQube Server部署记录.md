@@ -1,6 +1,7 @@
 # 环境准备
 ## 检查服务器是否符合 Elasticsearch
 
+### 确认并修改服务器最大打开文件数等限制
 执行以下命令检查数值是否满足要求
 ``` shell
 # 要求大于等于 524288
@@ -18,4 +19,24 @@ ulimit -u
  vm.max_map_count=524288
  fs.file-max=131072
 ```
-在
+在 /etc/security/limits.d/99-sonarqube.conf 中录入如下内容：
+``` shell
+sonarqube   -   nofile   131072
+
+sonarqube   -   nproc    8192
+```
+
+### 启用 seccomp
+执行命令 `grep SECCOMP /boot/config-$(uname -r)` ，如果输出如下，则说明启用
+``` shell
+CONFIG_HAVE_ARCH_SECCOMP_FILTER=y
+CONFIG_SECCOMP_FILTER=y
+CONFIG_SECCOMP=y
+```
+
+
+
+
+
+
+
