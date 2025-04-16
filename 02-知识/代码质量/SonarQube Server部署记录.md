@@ -34,6 +34,12 @@ CONFIG_SECCOMP_FILTER=y
 CONFIG_SECCOMP=y
 ```
 
+# 安装
+## 安装数据库
+## 安装SonarQube Server
+
+
+
 
 
 
