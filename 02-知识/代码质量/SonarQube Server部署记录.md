@@ -45,7 +45,8 @@ java -version
 ## 安装数据库
 创建数据库，按照顺序执行以下命令
 ``` shell
-sudo -u postgres psql
+docker exec -it postgres bash
+su - postgres psql
 CREATE DATABASE sonarqube OWNER postgres;
 GRANT ALL PRIVILEGES ON DATABASE sonarqube TO postgres;
 \q
