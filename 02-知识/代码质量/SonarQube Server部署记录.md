@@ -34,8 +34,17 @@ CONFIG_SECCOMP_FILTER=y
 CONFIG_SECCOMP=y
 ```
 
+### 安装 JDK
+
 # 安装
 ## 安装数据库
+创建数据库，按照顺序执行以下命令
+``` shell
+sudo -u postgres psql
+CREATE DATABASE sonarqube OWNER postgres;
+GRANT ALL PRIVILEGES ON DATABASE sonarqube TO postgres;
+\q
+```
 ## 安装SonarQube Server
 
 
