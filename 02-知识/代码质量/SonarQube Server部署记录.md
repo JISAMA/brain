@@ -35,6 +35,11 @@ CONFIG_SECCOMP=y
 ```
 
 ### 安装 JDK
+``` shell
+yum update -y
+yum install java-1.8.0-openjdk-devel -y
+java -version
+```
 
 # 安装
 ## 安装数据库
