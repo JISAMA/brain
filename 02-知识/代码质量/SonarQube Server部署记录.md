@@ -66,7 +66,7 @@ services:
 		ports:
 			- "9070:9070"
 		environment:
-			- SONAR_JDBC_URL=postgresql://postgres:123456@10.80.0.154:5432/sonarqube
+			- SONAR_JDBC_URL=jdbc:postgresql://10.80.0.154:5432/sonarqube
 			- SONAR_JDBC_USERNAME=postgres
 			- SONAR_JDBC_PASSWORD=123456
 			- SONAR_WEB_PORT=9070
