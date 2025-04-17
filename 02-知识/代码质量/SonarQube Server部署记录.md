@@ -53,7 +53,38 @@ GRANT ALL PRIVILEGES ON DATABASE sonarqube TO postgres;
 ```
 ## 通过 Docker 安装SonarQube Server
 先创建 network
-···
+``` shell
+docker create sonarqube-network
+```
+docker-compose.yaml 内容如下：
+``` yaml
+version: '3.4'
+services:
+	sonarqube:
+		container_name: sonarqube
+		image: 10.80.0.154:8080/base/sonarqube:lts-developer
+		ports:
+			- "9070:9070"
+		environment:
+			- SONAR_JDBC_URL=postgresql://postgres:123456@10.80.0.154:5432/sonarqube
+			- SONAR_JDBC_USERNAME=postgres
+			- SONAR_JDBC_PASSWORD=123456
+			- SONAR_WEB_PORT=9070
+			- SONAR_SEARCH_PORT=9071
+		networks:
+			- sonarqube-network
+		volumes:
+			- /servyouapp/sonarqube/conf:/opt/sonarqube/conf
+			- /servyouapp/sonarqube/data:/opt/sonarqube/data
+			- /servyouapp/sonarqube/logs:/opt/sonarqube/logs
+			- /servyouapp/sonarqube/extensions:/opt/sonarqube/extensions
+
+networks:
+	sonarqube-network:
+		driver: bridge
+		name: sonarqube-network
+		external: true
+```
 
 
 
