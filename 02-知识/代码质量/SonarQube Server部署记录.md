@@ -35,7 +35,7 @@ CONFIG_SECCOMP=y
 ```
 
 ### 安装 JDK
-``` shell
+```bash
 yum update -y
 yum install java-1.8.0-openjdk-devel -y
 java -version
@@ -43,8 +43,8 @@ java -version
 
 # 安装
 ## 安装数据库
-创建数据库，按照顺序执行以下命令
-``` shell
+创建专用数据库，按照顺序执行以下命令：
+```bash
 docker exec -it postgres bash
 su - postgres psql
 CREATE DATABASE sonarqube OWNER postgres;
@@ -52,7 +52,8 @@ GRANT ALL PRIVILEGES ON DATABASE sonarqube TO postgres;
 \q
 ```
 ## 通过 Docker 安装SonarQube Server
-先创建 network
+在内网 harbor 上上传镜像，具体步骤参考：[gitlab ci上无法拉取docker镜像 - EFG Q&A](http://fe-qa.dc.servyou-it.com/questions/D1S5)
+启动容器之前先创建 network
 ``` shell
 docker create sonarqube-network
 ```
@@ -74,6 +75,7 @@ services:
 		networks:
 			- sonarqube-network
 		volumes:
+		    # 不能映射整个sonarqube目录，否则 docker 也会被映射到这个目录，导致服务无法启动
 			- /servyouapp/sonarqube/conf:/opt/sonarqube/conf
 			- /servyouapp/sonarqube/data:/opt/sonarqube/data
 			- /servyouapp/sonarqube/logs:/opt/sonarqube/logs
@@ -86,7 +88,10 @@ networks:
 		external: true
 ```
 
-
+启动后如果遇到文件写入权限问题，执行以下命令开启权限：
+```bash
+sudo chmod 777 /opt/sonarqube/
+```
 
 
 
