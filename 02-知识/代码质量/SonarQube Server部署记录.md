@@ -97,9 +97,6 @@ sudo chmod 777 /servyouapp/sonarqube/*
 ## 安装插件
 可选择安装以下插件：
 [中文语言包](https://github.com/xuhuisheng/sonar-l10n-zh)
-[依赖漏洞检查](https://github.com/dependency-check/dependency-check-sonar-plugin)
-[JS/TS代码分析](https://github.com/green-code-initiative/creedengo-javascript)
-
 
 
 
