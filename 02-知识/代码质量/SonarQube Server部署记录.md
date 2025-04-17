@@ -51,7 +51,9 @@ CREATE DATABASE sonarqube OWNER postgres;
 GRANT ALL PRIVILEGES ON DATABASE sonarqube TO postgres;
 \q
 ```
-## 安装SonarQube Server
+## 通过 Docker 安装SonarQube Server
+先创建 network
+···
 
 
 
