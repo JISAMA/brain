@@ -3,7 +3,7 @@
 
 ### 确认并修改服务器最大打开文件数等限制
 执行以下命令检查数值是否满足要求
-``` shell
+```bash
 # 要求大于等于 524288
 sysctl vm.max_map_count
 # 要求大于等于 131072
@@ -15,12 +15,12 @@ ulimit -u
 ```
 如果不满足要求
 在 /etc/sysctl.d/99-sonarqube.conf 中录入如下内容：
-``` shell
+```bash
  vm.max_map_count=524288
  fs.file-max=131072
 ```
 在 /etc/security/limits.d/99-sonarqube.conf 中录入如下内容：
-``` shell
+```bash
 sonarqube   -   nofile   131072
 
 sonarqube   -   nproc    8192
@@ -28,7 +28,7 @@ sonarqube   -   nproc    8192
 
 ### 启用 seccomp
 执行命令 `grep SECCOMP /boot/config-$(uname -r)` ，如果输出如下，则说明启用
-``` shell
+```bash
 CONFIG_HAVE_ARCH_SECCOMP_FILTER=y
 CONFIG_SECCOMP_FILTER=y
 CONFIG_SECCOMP=y
@@ -54,7 +54,7 @@ GRANT ALL PRIVILEGES ON DATABASE sonarqube TO postgres;
 ## 通过 Docker 安装SonarQube Server
 在内网 harbor 上上传镜像，具体步骤参考：[gitlab ci上无法拉取docker镜像 - EFG Q&A](http://fe-qa.dc.servyou-it.com/questions/D1S5)
 启动容器之前先创建 network
-``` shell
+```bash
 docker create sonarqube-network
 ```
 docker-compose.yaml 内容如下：
@@ -90,7 +90,7 @@ networks:
 
 启动后如果遇到文件写入权限问题，执行以下命令开启权限：
 ```bash
-sudo chmod 777 /opt/sonarqube/
+sudo chmod 777 /servyouapp/sonarqube/*
 ```
 
 
