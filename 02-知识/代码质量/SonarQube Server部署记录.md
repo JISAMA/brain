@@ -42,7 +42,8 @@ java -version
 ```
 
 # 安装
-## 安装数据库
+## 安装 postgresql 数据库
+154上已经部署 postgresql 可直接复用
 创建专用数据库，按照顺序执行以下命令：
 ```bash
 docker exec -it postgres bash
