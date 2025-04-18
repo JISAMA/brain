@@ -46,7 +46,8 @@ java -version
 创建专用数据库，按照顺序执行以下命令：
 ```bash
 docker exec -it postgres bash
-su - postgres psql
+su - postgres
+psql
 CREATE DATABASE sonarqube OWNER postgres;
 GRANT ALL PRIVILEGES ON DATABASE sonarqube TO postgres;
 \q
