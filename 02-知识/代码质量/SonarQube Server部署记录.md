@@ -43,7 +43,7 @@ java -version
 
 # 安装
 ## 安装 postgresql 数据库
-154上已经部署 postgresql 可直接复用
+154上已经部署 postgresql 可直接复用。
 创建专用数据库，按照顺序执行以下命令：
 ```bash
 docker exec -it postgres bash
@@ -53,8 +53,9 @@ CREATE DATABASE sonarqube OWNER postgres;
 GRANT ALL PRIVILEGES ON DATABASE sonarqube TO postgres;
 \q
 ```
-## 通过 Docker 安装SonarQube Server
-在内网 harbor 上上传镜像，具体步骤参考：[gitlab ci上无法拉取docker镜像 - EFG Q&A](http://fe-qa.dc.servyou-it.com/questions/D1S5)
+## 通过 Docker 安装 SonarQube
+这里选择部署的 SonarQube 为免费的社区版。
+在内网 harbor 上上传镜像 sonarqube:lts-community，具体步骤参考：[gitlab ci上无法拉取docker镜像 - EFG Q&A](http://fe-qa.dc.servyou-it.com/questions/D1S5)
 启动容器之前先创建 network
 ```bash
 docker create sonarqube-network
@@ -65,7 +66,7 @@ version: '3.4'
 services:
 	sonarqube:
 		container_name: sonarqube
-		image: 10.80.0.154:8080/base/sonarqube:lts-developer
+		image: 10.80.0.154:8080/base/sonarqube:lts-community
 		ports:
 			- "9070:9070"
 		environment:
