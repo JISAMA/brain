@@ -57,7 +57,7 @@ GRANT ALL PRIVILEGES ON DATABASE sonarqube TO postgres;
 在内网 harbor 上上传镜像 sonarqube:lts-community，具体步骤参考：[gitlab ci上无法拉取docker镜像 - EFG Q&A](http://fe-qa.dc.servyou-it.com/questions/D1S5)
 启动容器之前先创建 network
 ```bash
-docker create sonarqube-network
+docker network create sonarqube-network
 ```
 docker-compose.yaml 内容如下：
 ``` yaml
