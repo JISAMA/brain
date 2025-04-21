@@ -76,6 +76,7 @@ services:
 			- SONAR_SEARCH_PORT=9071
 		networks:
 			- sonarqube-network
+		restart: always
 		volumes:
 		    # 不能映射整个sonarqube目录，否则 docker 也会被映射到这个目录，导致服务无法启动
 			- /servyouapp/sonarqube/conf:/opt/sonarqube/conf
