@@ -16,13 +16,12 @@ ulimit -u
 如果不满足要求
 在 /etc/sysctl.d/99-sonarqube.conf 中录入如下内容：
 ```bash
- vm.max_map_count=524288
- fs.file-max=131072
+vm.max_map_count=524288
+fs.file-max=131072
 ```
 在 /etc/security/limits.d/99-sonarqube.conf 中录入如下内容：
 ```bash
 sonarqube   -   nofile   131072
-
 sonarqube   -   nproc    8192
 ```
 
