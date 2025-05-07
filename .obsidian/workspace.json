@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "SonarQube Server部署记录"
             }
-          },
-          {
-            "id": "12f9e364247c59be",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.10"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.10"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -203,10 +190,11 @@
       "random-note:开始漫游笔记": false,
       "obsidian-kanban:创建新看板": false,
       "smart-second-brain:打开 S2B 聊天": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "12f9e364247c59be",
+  "active": "ae9458e87e70d0ff",
   "lastOpenFiles": [
     "05-工作/2025第2季度.md",
     "02-知识/代码质量/SonarQube Server部署记录.md",
